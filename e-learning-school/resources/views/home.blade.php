@@ -9,6 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Reinaldo</h1>
+<form class="flex flex-col w-1/2" action="">
+    <h1>cadastro de aluno</h1>
+    <a href="">Cadastrar professor</a>
+    <input type="text" class="border border-2 ">
+    <input type="text" class="border border-2">
+    <input type="text" class="border border-2">
+    <input type="submit" class="bg-green-400">
+</form>
 </body>
 </html>

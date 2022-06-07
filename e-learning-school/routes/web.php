@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AlunoController;
+use App\Http\Controllers\ProfessorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::controller(AlunoController::class)->group(function () {
+    Route::get('/alunos', 'index');
+    Route::get('/alunos/{id}', 'show');
+});
+
+Route::controller(ProfessorController::class)->group(function () {
+    Route::get('/professores', 'index');
+    Route::get('/professores/{id}', 'show');
 });
